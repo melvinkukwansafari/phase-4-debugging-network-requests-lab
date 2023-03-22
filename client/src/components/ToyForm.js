@@ -36,6 +36,9 @@ function ToyForm({ onAddToy }) {
         });
         onAddToy(newToy);
       });
+      fetch(`/toys/${newToy.id}`, {
+        method: "DELETE",
+      });
   }
 
   return (

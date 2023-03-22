@@ -63,11 +63,15 @@ developing your own process.
 - Add a new toy when the toy form is submitted
 
   - How I debugged:
+      -I used the Toy.new for creating new toy in the create instance method rather than using the the Toy.create method.
 
 - Update the number of likes for a toy
-
+      
   - How I debugged:
+      -In the update method you can change the number of likes for a toy and update  the number of likes for that toy accordingly by using permit likes  in the toy_params method which is private
 
 - Donate a toy to Goodwill (and delete it from our database)
 
   - How I debugged:
+        -Added a destroy method and its routes in the resources and then find toys by id then toy.destroy
+        
